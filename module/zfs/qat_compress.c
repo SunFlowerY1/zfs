@@ -191,7 +191,8 @@ qat_dc_init(void)
 
 		sd.compLevel = CPA_DC_L1;
 		sd.compType = CPA_DC_DEFLATE;
-		sd.huffType = CPA_DC_HT_FULL_DYNAMIC;
+		//sd.huffType = CPA_DC_HT_FULL_DYNAMIC;
+		sd.huffType = CPA_DC_HT_STATIC;
 		sd.sessDirection = CPA_DC_DIR_COMBINED;
 		sd.sessState = CPA_DC_STATELESS;
 		sd.deflateWindowSize = 7;
